@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.RatingBar;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.example.flixster.models.Movie;
 
@@ -32,12 +36,12 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvOverview = (TextView) findViewById(R.id.tvOverview);
         rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
 
+
         tvTitle.setText(movie.getTitle());
         tvOverview.setText(movie.getOverview());
 
         float voteAverage = movie.getVoteAverage().floatValue();
         rbVoteAverage.setRating(voteAverage / 2.0f);
-
 
     }
 }
