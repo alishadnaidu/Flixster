@@ -99,7 +99,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
             String imageUrl;
-            String placeholderUrl;
             //if phone in landscape: set imageUrl to backdrop image
             //else (phone in portrait): set imageUrl to poster image
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
@@ -119,7 +118,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                         .into(ivPoster);
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            //Glide.with(context).load(imageUrl).into(ivPoster);
             /*
             int radius = 30; // corner radius, higher value = more rounded
             int margin = 10; // crop margin, set to 0 for corners with no crop
