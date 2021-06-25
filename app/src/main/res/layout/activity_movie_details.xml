@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:numStars="5"
+        android:progressTint="#FBD203"
         android:stepSize="0.5"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
@@ -31,4 +32,13 @@
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rbVoteAverage" />
+
+    <Switch
+        android:id="@+id/favoriteSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite"
+        app:layout_constraintTop_toBottomOf="@+id/tvOverview"
+        tools:layout_editor_absoluteX="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
